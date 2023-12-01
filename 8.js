@@ -1,0 +1,14 @@
+const prompt = require("prompt-sync")();
+let x1 = Number(prompt(" x1 ="));
+let y1 = Number(prompt(" y1 ="));
+let x2 = Number(prompt(" x2 ="));
+let y2 = Number(prompt(" y2 ="));
+let x3 = Number(prompt(" x3 ="));
+let y3 = Number(prompt(" y3 ="));
+let a = Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+let b = Math.sqrt((x3 - x1) ** 2 + (y3 - y1) ** 2);
+let c = Math.sqrt((x2 - x3) ** 2 + (y2 - y3) ** 2);
+let p = (a + b + c) / 2;
+let s = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+console.log(s.toFixed(2), (p * 2).toFixed(2));
+console.log(a);
